@@ -124,7 +124,7 @@ const Contact = () => {
       )}
 
       <address style={addressStyle}>
-        <p>📍 MM Enviro HQ, Indore, MP, India</p>
+        <p>📍 MM Enviro HQ, Nagpur, MH, India</p>
         <p>
           📞{' '}
           <a href="tel:+919876543210" style={linkStyle}>
