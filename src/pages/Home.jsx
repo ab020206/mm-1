@@ -1,4 +1,4 @@
-import backgroundImage from "../assets/background.svg";
+
 import React, { useRef, useState, useEffect } from "react";
 import * as THREE from "three";
 

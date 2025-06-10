@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Link, useLocation } from "react-router-dom";
 import "./Navbar.css";
+import logo from "./logo.png"; // Adjust the path relative to Navbar.jsx
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -54,11 +55,8 @@ const Navbar = () => {
         role="heading"
         aria-level={1}
       >
-        <img
-          src="src/assets/logo.png"
-          alt="MM Enviro Logo"
-          className="logo-img"
-        />
+        <img src={logo} alt="MM Enviro Logo" className="logo-img" />
+
         <span className="logo-text">MM Enviro</span>
       </div>
 
