@@ -109,3 +109,42 @@
   border-radius: 3px;
   transition: all 0.3s ease;
 }
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem; /* Matches Tailwind's gap-2 */
+  font-size: 1.5rem; /* text-xl for better scaling */
+  font-weight: 800; /* Slightly less bold than 900 for cleaner look */
+  cursor: default;
+  color: #1f2937; /* gray-800 */
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  object-fit: contain;
+}
+
+@media (max-width: 768px) {
+  .logo-img {
+    height: 35px;
+    width: 35px;
+  }
+
+  .navbar-logo {
+    font-size: 1.5rem; /* text-base */
+    gap: 0.4rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo-img {
+    height: 30px;
+    width: 30px;
+  }
+
+  .navbar-logo {
+    font-size: 1rem;
+    gap: 0.3rem;
+  }
+}

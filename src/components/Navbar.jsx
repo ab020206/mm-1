@@ -47,9 +47,22 @@ const Navbar = () => {
 
   return (
     <header className="navbar-header">
-      <div className="navbar-logo" aria-label="MM Enviro Logo" tabIndex={0} role="heading" aria-level={1}>
-        🌿 MM Enviro
+      <div
+        className="navbar-logo flex items-center gap-2"
+        aria-label="MM Enviro Logo"
+        tabIndex={0}
+        role="heading"
+        aria-level={1}
+      >
+        <img
+          src="src/assets/logo.png"
+          alt="MM Enviro Logo"
+          className="logo-img"
+        />
+        <span className="logo-text">MM Enviro</span>
       </div>
+
+
 
       {isMobile && (
         <button

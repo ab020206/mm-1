@@ -157,7 +157,7 @@ const containerStyle = {
 const headingStyle = {
   fontSize: '2rem',
   marginBottom: '1.75rem',
-  fontWeight: '700',
+  fontWeight: '900',
   textAlign: 'center',
   color: '#2E7D32',
 };

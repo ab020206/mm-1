@@ -181,6 +181,7 @@ const Equipment = () => {
     id="equipment-heading"
     style={{
       fontSize: "2rem",
+      fontWeight: "900",
       marginBottom: "1.5rem",
       textAlign: "center",
       color: "#1e4d2b", // darker green heading

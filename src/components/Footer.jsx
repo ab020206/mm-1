@@ -70,7 +70,7 @@ const styles = {
   },
   title: {
     fontSize: '1.3rem',
-    fontWeight: '600',
+    fontWeight: '800',
     color: '#2f855a',
     marginBottom: '0.3rem',
   },
@@ -108,7 +108,7 @@ const styles = {
   },
   bottom: {
     textAlign: 'center',
-    marginTop: '1rem',
+    marginTop: '1.5rem',
   },
   bottomText: {
     fontSize: '0.8rem',

@@ -3,45 +3,61 @@ import { FaIndustry } from 'react-icons/fa';
 
 const sectors = [
   {
-    name: "Distillery",
-    description: "Description for Distillery sector. Placeholder text describing industry details.",
-    image: "https://via.placeholder.com/400x250?text=Distillery+Image",
-  },
+  name: "Distillery",
+  description:
+    "Wastewater from the Distillery is generally well suited for anaerobic treatment due to the abundant presence of organic compounds. MM Enviro has broad experience with a wide spectrum of distillery waste streams, including evaporator condensate, thin stillage (grain, fruit), and raw spent wash/vinasse (sugarcane). Our Anaerobic Digesters ensure the highest removal of organic COD. Generating biogas from effluent streams maximizes energy recovery and reduces fossil fuel consumption. With over 75+ successful references in the Distillery sector, we bring extensive expertise to help the industry generate maximum biogas from effluent streams. High-strength distillery raw spent wash is treated in MM Enviro’s CSTR Digester, whereas evaporator condensate is treated through our advanced CPU process.",
+  image: "https://via.placeholder.com/400x250?text=Distillery+Image",
+}
+,
   {
-    name: "Brewery, Food & Beverages",
-    description: "Description for Brewery, Food & Beverages sector.",
-    image: "https://via.placeholder.com/400x250?text=Brewery+Image",
-  },
+  name: "Brewery & Beverages",
+  description:
+    "Wastewater from the Brewery & Beverages sector is generally well suited for anaerobic treatment as it contains a moderate quantity of biodegradable organic compounds. MM Enviro has broad experience with a wide spectrum of waste streams in this sector, including evaporator condensate and thin stillage. Our Anaerobic Digesters ensure the highest removal of organic COD, enabling biogas generation from effluent streams to maximize energy recovery and reduce fossil fuel consumption. The anaerobically treated wastewater is further processed through a Second Stage Aerobic treatment, and tertiary treatment is provided when recycling is envisaged.",
+  image: "https://via.placeholder.com/400x250?text=Brewery+%26+Beverages+Image",
+}
+,
   {
-    name: "Sugar",
-    description: "Description for Sugar sector.",
-    image: "https://via.placeholder.com/400x250?text=Sugar+Image",
-  },
+  name: "Sugar Industry",
+  description:
+    "Wastewater from the Sugar Industry varies in organic content but is generally suitable for both anaerobic and aerobic treatment processes. MM Enviro has broad experience with a wide spectrum of sugar industry waste streams, including evaporator condensate. Our Anaerobic Digesters ensure the highest removal of organic COD. The anaerobically treated wastewater is further processed using a Second Stage Aerobic treatment, and tertiary treatment is provided when recycling is envisaged. In addition, we offer biogas plants for press-mud/filter cake, based on a commercially proven CSTR process.",
+  image: "https://via.placeholder.com/400x250?text=Sugar+Industry+Image",
+}
+,
   {
-    name: "Pulp & Paper",
-    description: "Description for Pulp & Paper sector.",
-    image: "https://via.placeholder.com/400x250?text=Pulp+%26+Paper+Image",
-  },
+  name: "Pulp & Paper",
+  description:
+    "Wastewater from the Pulp & Paper Industry varies in organic content depending on the production process, but is generally suitable for both anaerobic and aerobic treatment processes. MM Enviro has broad experience with a spectrum of Pulp & Paper waste streams. Anaerobic Digesters such as UASB ensure the highest removal of organic COD. The anaerobically treated wastewater is further processed through a Second Stage Aerobic treatment, and tertiary treatment is provided when recycling is envisaged.",
+  image: "https://via.placeholder.com/400x250?text=Pulp+%26+Paper+Image",
+}
+,
   {
-    name: "Dairy",
-    description: "Description for Dairy sector.",
-    image: "https://via.placeholder.com/400x250?text=Dairy+Image",
-  },
+  name: "Dairy",
+  description:
+    "Wastewater from the Dairy Industry varies in organic content depending on the production process, but is generally suitable for both anaerobic and aerobic treatment processes. MM Enviro has broad experience with a spectrum of Dairy waste streams. Anaerobic Digesters ensure the highest removal of organic COD. The anaerobically treated wastewater is further processed through a Second Stage Aerobic treatment, and tertiary treatment is provided when recycling is envisaged.",
+  image: "https://via.placeholder.com/400x250?text=Dairy+Industry+Image",
+}
+,
   {
-    name: "Pharma",
-    description: "Description for Pharma sector.",
-    image: "https://via.placeholder.com/400x250?text=Pharma+Image",
-  },
+  name: "Pharma",
+  description:
+    "Wastewater from the Pharma Industry varies in organic content depending on the production process. The treatment scheme involves a combination of physico-chemical and biological processes based on specific requirements. MM Enviro has broad experience with a spectrum of Pharma waste streams. The wastewater is further treated through Second Stage or Tertiary treatment depending on the intended end use of the treated water.",
+  image: "https://via.placeholder.com/400x250?text=Pharma+Industry+Image",
+}
+,
+ {
+  name: "Sewage (Residential / Hotels / Public Toilets)",
+  description:
+    "Sewage from Residential areas, Hotels, and other Public Toilets is easily treatable using various biological treatment processes such as MBBR, SAF, and SBR type reactors. The treatment scheme typically involves primary and biological processes tailored to the specific requirements. MM Enviro has broad experience with a wide range of flow volumes, including both low and high flow streams. For very small flows, packaged-type treatment plants are offered. The sewage is further treated through Second Stage or Tertiary treatment based on the envisaged water end use.",
+  image: "https://via.placeholder.com/400x250?text=Sewage+Treatment+Image",
+}
+,
   {
-    name: "Sewage",
-    description: "Description for Sewage sector.",
-    image: "https://via.placeholder.com/400x250?text=Sewage+Image",
-  },
-  {
-    name: "Water Treatment",
-    description: "Description for Water Treatment sector.",
-    image: "https://via.placeholder.com/400x250?text=Water+Treatment+Image",
-  },
+  name: "Water Treatment Plant",
+  description:
+    "Water Treatment Plant processes offered by MM Enviro are customized based on the client's end-use requirements. We provide a range of processes including Coagulation, Filtration, Disinfection, Reverse Osmosis, Ultra-Filtration, and Demineralisation, as needed. With broad experience handling both low and high flow streams, we also offer packaged-type treatment plants for very small flows.",
+  image: "https://via.placeholder.com/400x250?text=Water+Treatment+Plant+Image",
+}
+,
 ];
 
 const Industries = () => {
@@ -190,7 +206,7 @@ const headingStyle = {
   marginBottom: "1.5rem",
   color: "#1e4d2b",
   position: "relative",
-  fontWeight: "700",
+  fontWeight: "900",
 };
 
 const dividerStyle = {
