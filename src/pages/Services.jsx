@@ -349,7 +349,7 @@ const Services = () => {
 // Styles
 const headingStyle = {
   textAlign: "center",
-  fontSize: "3rem",
+  fontSize: "2.5rem",
   color: "#1e4d2b", // deeper green, professional & calm
   marginBottom: "3.5rem",
   fontWeight: 900,
