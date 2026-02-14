@@ -1,0 +1,195 @@
+/* Services.css */
+.services-hero {
+    background: linear-gradient(135deg, #e0f2f1 0%, #e8f5e9 100%);
+    padding: 6rem 1rem 4rem;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+[data-theme='dark'] .services-hero {
+    background: linear-gradient(135deg, #0d2e1f 0%, #0a1f14 100%);
+}
+
+.services-hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+[data-theme='dark'] .services-hero h1 {
+    color: var(--color-text-light);
+    /* Ensure visibility in dark mode */
+}
+
+
+.services-hero p {
+    font-size: 1.25rem;
+    opacity: 0.8;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Service Categories Grid */
+.service-category-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: var(--shadow-md);
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    height: 100%;
+}
+
+[data-theme='dark'] .service-category-card {
+    background: #1e2a24;
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.service-category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.category-icon-wrapper {
+    width: 60px;
+    height: 60px;
+    background-color: rgba(46, 125, 50, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    color: var(--color-primary);
+    font-size: 1.75rem;
+}
+
+[data-theme='dark'] .category-icon-wrapper {
+    background-color: rgba(77, 182, 172, 0.1);
+    color: var(--color-secondary);
+}
+
+.service-category-card h3 {
+    margin-bottom: 1rem;
+    color: var(--color-primary);
+}
+
+[data-theme='dark'] .service-category-card h3 {
+    color: var(--color-secondary);
+}
+
+/* Technologies Section */
+.tech-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.tech-item {
+    background: white;
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+[data-theme='dark'] .tech-item {
+    background: #1e2a24;
+    border-color: rgba(255, 255, 255, 0.05);
+}
+
+.tech-header {
+    padding: 1.5rem 2rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color var(--transition-fast);
+}
+
+.tech-header:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+}
+
+[data-theme='dark'] .tech-header:hover {
+    background-color: rgba(255, 255, 255, 0.02);
+}
+
+.tech-header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.tech-icon {
+    font-size: 1.25rem;
+    color: var(--color-secondary);
+    transition: transform var(--transition-normal);
+}
+
+.tech-item.active .tech-icon {
+    transform: rotate(180deg);
+}
+
+.tech-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease-out;
+    background-color: rgba(0, 0, 0, 0.01);
+}
+
+.tech-item.active .tech-content {
+    max-height: 1000px;
+    /* Arbitrary large value */
+    transition: max-height 0.6s ease-in;
+}
+
+.tech-inner {
+    padding: 0 2rem 2rem;
+}
+
+.feature-block {
+    margin-top: 1.5rem;
+    padding: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 0.5rem;
+    border-left: 3px solid var(--color-secondary);
+}
+
+[data-theme='dark'] .feature-block {
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.feature-block h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    color: var(--color-primary);
+}
+
+[data-theme='dark'] .feature-block h4 {
+    color: var(--color-secondary);
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.feature-list li {
+    position: relative;
+    padding-left: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.95rem;
+    opacity: 0.9;
+}
+
+.feature-list li::before {
+    content: "•";
+    color: var(--color-secondary);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}
